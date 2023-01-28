@@ -29,12 +29,14 @@ public class ArrayExamples {
       if(num < lowest) { lowest = num; }
     }
     double sum = 0;
+    int checker = 0;
     for(double num: arr) {
       if(num != lowest) { sum += num; }
+      else { checker++; }
     }
-    return sum / (arr.length - 1);
+    return sum / (arr.length - checker);
   }
-
-
 }
+
+
 
